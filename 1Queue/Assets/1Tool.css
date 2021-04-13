@@ -1,0 +1,162 @@
+/* ---- 1Queue Style Sheet ---- */
+
+/* CSS for the body */
+body {
+  font-family: "Toyota Type";
+  font-size: 01em;
+  background-color: #000000;
+  color: white;
+}
+
+/* CSS design for all div tags */
+div {
+  font-family: "Toyota Type";
+  font-size: 01em;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+  border: 3px solid rgb(85, 0, 0);
+  border-radius: 18px;
+  background-color:#15117B;
+  width: 90%;
+  height: auto;
+  margin: 2%;
+  padding: 2%;
+}
+
+/* Color of the Buttons at the top */
+#button {
+  background-color: black;
+  color: white;
+  text-shadow: 5px 2px blue;
+  border-radius: 20px;
+  box-shadow: 2px 5px silver;
+  width: 200px;
+  height: 40px;
+}
+
+/* How the h1 tags show */
+h1{
+  text-align: center; 
+  font-style: italic;
+  text-shadow: 5px 5px black;
+}
+
+/* How the h3 tags show */
+h3{
+  text-align: center; 
+  font-style: italic;
+  text-shadow: 5px 5px black;
+}
+
+/* The center id does this */
+.center {
+  text-align: center;
+}
+
+/* Set toyota and said image to center */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* How the area the text resides in looks */
+textarea {
+  border: 3px solid rgb(85, 0, 0);
+  border-radius: 10px;
+  background-color: grey;
+  width: 90%;
+  overflow: hidden;
+}
+
+/* CSS for the Copy buttons */
+button.copy{
+  padding: 10px;
+  background-color: maroon;
+  border: 1px solid grey;
+  text-shadow: 2px 2px black;
+  box-shadow: 3px 3px grey;
+  font-family: "Toyota Type";
+  font-size: 01em;
+  font-weight: bold;
+  margin-right: 0px;
+  border-radius: 16px 0px 0px 16px;
+  color: white;
+  width: 6%;
+  vertical-align: top;
+}
+
+/* CSS for the Copy KBbuttons 
+button.kbcopy{
+  padding: 10px;
+  background-color: maroon;
+  border: 1px solid grey;
+  text-shadow: 2px 2px black;
+  box-shadow: 3px 3px grey;
+  font-family: "Toyota Type";
+  font-size: 01em;
+  font-weight: bold;
+  margin-right: 0px;
+  border-radius: 6px 0px 0px 6px;
+  color: white;
+  width: 6%;
+  height: 6%;
+  vertical-align: top;
+}*/
+
+li {
+  font-size: 25px;
+  text-align:justify;
+}
+
+a {
+color: #C0C0C0;
+text-align:right;
+} 
+
+#kb {
+  text-align:right;
+}
+
+/* Unused CSS: */
+/* Gofrom zero to full opacity
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+} */
+
+/* div.b {
+  word-wrap: break-word;
+  background-color:maroon;
+  border: 3px solid rgb(85, 0, 0);
+  width: 90%;
+  height: auto;
+  white-space: nowrap;
+  margin: 2%;
+  padding: 2%;
+} */
+
+/* input.scriptField {
+  width: 92%;
+} */
+
+/* .tabcontent {
+  white-space: nowrap;
+  word-wrap: break-word;
+  width: 90%;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second *//*
+} */
+
+/* input{
+  font-family: "Toyota Type";
+  font-size: 01em;
+  font-weight: bold;
+  color: white;
+  border: 1px solid rgb(85, 0, 0);
+  border-left: none;
+  padding: 10px;
+  border-radius: 0px 16px 16px 0px;
+  margin-left: -5px;
+} */

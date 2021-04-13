@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+
+<!-- Project started by Jenna Kenshin, for the 1Chat team.
+     Carried forward into the 1Queue Tool by Matthew Wheeler, for use with Queue Processing.
+     1Queue Tool Project is aided by Jordan Griffin and Joseph Hogue. -->
+
+<html>
+    <head>
+        <title>Queue Processing</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="1Tool.css">
+        <script type="text/javascript" src="1Tool.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        
+    </head>
+
+<body>
+<!--header-->
+    <div.header id="topbar">
+        <img src="generic-image-placeholder.png" width="10%" height="auto" />
+        <img src="generic-image-placeholder.png" width="10%" height="auto" />
+        <p style="text-align: center">Version: <span id="versionDate">0</span></p>
+    </div.header>
+<!--reference to 1tool.html and 1chat.html-->
+    <div class="tab">
+        <a href="../1Tool.html"><button id="button">1Tool</button></a>
+        <a href="1Chat.html"><button id="button">1Chat</button></a>
+    </div>
+
+<!--tabs-->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Contact')" id="button">Contacting us back</button>
+        <button class="tablinks" onclick="openCity(event, 'Password')" id="button">Password</button>
+        <button class="tablinks" onclick="openCity(event, 'Email')" id="button">Emailing the user</button>
+        <button class="tablinks" onclick="openCity(event, 'Misc')" id="button">Misc</button>
+        <button class="tablinks" onclick="openCity(event, 'MTMUS')" id="button">MTMUS</button>
+        <button class="tablinks" onclick="openCity(event, 'Spanish')" id="button">Spanish</button>
+        <button class="tablinks" onclick="openCity(event, 'KB')" id="button">General KBs</button>
+        <button class="tablinks" onclick="openCity(event, 'Email Template')" id="button">Email Templates</button>
+    </div>
+<!--frontface-->
+    <div id="frontface" class="tabcontent">
+        <h1>This is the Landing Page of the 1Queue Tool, welcome to the Queue Processor's Life!</h1>
+    </div>
+
+<!--Contacting Us Back-->
+    <div id="Contact" class="tabcontent">
+        <h1>Contacting us back</h1>
+        <h3>No phone number</h3>
+        <!-- The button used to copy the text -->
+        <button class="copy" onclick="quickCopy('tstText')">Copy</button>
+
+        <!-- The text field -->
+     <textarea id="tstText" readonly></textarea>
+        <h3>Didn't answer</h3>
+        <button class="copy" onclick="quickCopy('answer2')">Copy</button>
+        <textarea id="answer2" readonly></textarea>
+        <h3>Still having a problem?</h3>
+        <button class="copy" onclick="quickCopy('answer3')">Copy</button>
+        <textarea id="answer3" readonly></textarea>
+        <h3>Tell me when to contact you</h3>
+        <button class="copy" onclick="quickCopy('answer4')">Copy</button>
+        <textarea id="answer4" readonly></textarea>
+
+<h3>Additional information</h3>
+        <button class="copy" onclick="quickCopy('answer5')">Copy</button>
+        <textarea id="answer5" readonly></textarea>
+</div>
+
+<!--Password Resets-->
+    <div id="Password" class="tabcontent">
+        <h1>Passwords</h1>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('pw1')">Copy</button>
+        <textarea id="pw1" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('pw2')">Copy</button>
+        <textarea id="pw2" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('pw3')">Copy</button>
+        <textarea id="pw3" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('pw4')">Copy</button>
+        <textarea id="pw4" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('pw5')">Copy</button>
+        <textarea id="pw5" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('pw6')">Copy</button>
+        <textarea id="pw6" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('pw7')">Copy</button>
+        <textarea id="pw7" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('pw8')">Copy</button>
+        <textarea id="pw8" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('pw9')">Copy</button>
+        <textarea id="pw9" readonly></textarea>
+
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('pw9')">Copy</button>
+        <textarea id="pw10" readonly></textarea>
+</div>
+
+<!--Emailing the User-->
+    <div id="Email" class="tabcontent">
+        <h1>Emailing the user</h1>
+
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('em1')">Copy</button>
+        <textarea id="em1" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('em2')">Copy</button>
+        <textarea id="em2" readonly></textarea>
+</div>
+
+<!--MISC-->
+    <div id="Misc" class="tabcontent">
+        <h1>Misc</h1>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc9')">Copy</button>
+        <textarea id="misc9" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc10')">Copy</button>
+        <textarea id="misc10" readonly></textarea>  
+        
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc11')">Copy</button>
+        <textarea id="misc11" readonly></textarea>
+
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc1')">Copy</button>
+        <textarea id="misc1" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc2')">Copy</button>
+        <textarea id="misc2" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc3')">Copy</button>
+        <textarea id="misc3" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc4')">Copy</button>
+        <textarea id="misc4" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc5')">Copy</button>
+        <textarea id="misc5" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc6')">Copy</button>
+        <textarea id="misc6" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc7')">Copy</button>
+        <textarea id="misc7" readonly></textarea>
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc8')">Copy</button>
+        <textarea id="misc8" readonly></textarea>
+   
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc12')">Copy</button>
+        <textarea id="misc12" readonly></textarea>
+   
+        <h3>Placeholder</h3>
+        <button class="copy" onclick="quickCopy('misc13')">Copy</button>
+        <textarea id="misc13" readonly></textarea>
+   
+        
+</div>
+
+<!--MTMUS-->
+<div id="MTMUS" class="tabcontent">
+    <h1>PlaceHolder</h1>
+
+    <h3>Placeholder</h3>
+    <!-- The button used to copy the text -->
+    <button class="copy" onclick="quickCopy('MTMUS1')">Copy</button>
+    <textarea id="MTMUS1" readonly></textarea>
+
+    <h3>Placeholder</h3>
+    <!-- The button used to copy the text -->
+    <button class="copy" onclick="quickCopy('MTMUS2')">Copy</button>
+    <textarea id="MTMUS2" readonly></textarea>
+    <h3>Placeholder</h3>
+    <button class="copy" onclick="quickCopy('MTMUS3')">Copy</button>
+    <textarea id="MTMUS3" readonly></textarea>
+
+    <h3>Placeholder</h3>
+    <button class="copy" onclick="quickCopy('MTMUS4')">Copy</button>
+    <textarea id="MTMUS4" readonly></textarea>
+
+    <h3> <h3>Placeholder</h3></h3>
+    <button class="copy" onclick="quickCopy('MTMUS5')">Copy</button>
+    <textarea id="MTMUS5" readonly></textarea>
+</div>
+
+<!--Spanish-->
+<div id="Spanish" class="tabcontent">
+    <h1>These are Spanish templates that should only be used when attepting to contact users in Puerto Rico</h1>
+    <h3>Placeholder</h3>
+    <!-- The button used to copy the text -->
+    <button class="copy" onclick="quickCopy('Spanish1')">Copy</button>
+
+        <!-- The text field -->
+        <textarea id="Spanish1" readonly></textarea>
+    <h3>Placeholder</h3>
+    <button class="copy" onclick="quickCopy('Spanish2')">Copy</button>
+    <textarea id="Spanish2" readonly></textarea>
+    <h3>Placeholder</h3>
+    <button class="copy" onclick="quickCopy('Spanish3')">Copy</button>
+    <textarea id="Spanish3" readonly></textarea>
+    <h3>Placeholder</h3>
+    <button class="copy" onclick="quickCopy('Spanish4')">Copy</button>
+    <textarea id="Spanish4" readonly></textarea>
+    <h3>Placeholder</h3>
+    <button class="copy" onclick="quickCopy('Spanish5')">Copy</button>
+    <textarea id="Spanish6" readonly></textarea>
+</div>
+
+<!--General KBs-->
+    <div id="KB" class="tabcontent">
+        <h1>General KBs</h1>
+            <ul id="list1">
+                <!-- Add any other KB's here by <li></li>, following the same format -->
+                <!--<li> <a target="_blank" rel="noopener noreferrer" href="">KB</a></li>-->
+
+               <!-- <button id="button" class="copy" onclick="quickCopy('GeneralKB1')">Copy</button>
+                <textarea id="answer2" readonly> -->
+
+                <!-- removed -->
+            </ul>
+
+        <h1>Password Resets</h1>
+            <ul id="list2">
+                <!-- removed -->
+            </ul>       
+
+        <h1>Outlook</h1>
+            <ul id="list3">
+                <!-- removed -->
+            </ul>
+
+        <h1>VDI</h1>
+            <ul id="list3">
+                <!-- removed -->
+            </ul>
+</div>
+
+<!--Templates-->
+    <div id="Email Template" class="tabcontent">
+      <h1>Templates</h1>
+      <h3>These templates will open directly in outlook but only works in IE</h3>
+      <ul id="list1">
+        <!-- removed -->
+      </ul>
+</div>
+
+    
+
+</body>
+</html>
